@@ -1,10 +1,10 @@
 define(function (require) {
-    var registerSuite = require('intern!object');
-    var assert = require('intern/chai!assert');
-    var hello = require('app/hello');
+    var registerSuite = require('intern!object'),
+        assert = require('intern/chai!assert'),
+        hello = require('app/hello');
 
     registerSuite({
-        name: 'hello',
+        name: 'hello-object',
 
         greet: function () {
             assert.strictEqual(hello.greet('Murray'), 'Hello, Murray!',
